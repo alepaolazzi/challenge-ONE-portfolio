@@ -1,0 +1,15 @@
+.introducao__item {
+  color: var(--dark-grey);
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.18;
+}
+
+.introducao__item::after {
+  content: url(/assets/img/arrow.svg);
+  display: inline-block;
+  height: 16px;
+  margin-top: -3px;
+  width: 16px;
+}

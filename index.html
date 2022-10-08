@@ -9,24 +9,53 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
   <title>Portfólio | Alessandro Paolazzi</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/cabecalho/cabecalho.css">
+  <link rel="stylesheet" href="./assets/css/cabecalho/cabecalho-titulo.css">
+  <link rel="stylesheet" href="./assets/css/menu/menu-lista.css">
+  <link rel="stylesheet" href="./assets/css/menu/menu-item.css">
+  <link rel="stylesheet" href="./assets/css/introducao/introducao.css">
+  <link rel="stylesheet" href="./assets/css/introducao/introducao-informacoes.css">
+  <link rel="stylesheet" href="./assets/css/introducao/introducao-titulo.css">
+  <link rel="stylesheet" href="./assets/css/introducao/introducao-resumo.css">
+  <link rel="stylesheet" href="./assets/css/introducao/introducao-lista.css">
+  <link rel="stylesheet" href="./assets/css/introducao/introducao-item.css">
+  <link rel="stylesheet" href="./assets/css/introducao/introducao-imagem.css">
+  <link rel="stylesheet" href="./assets/css/sobre/sobre.css">
+  <link rel="stylesheet" href="./assets/css/sobre/sobre-titulo.css">
+  <link rel="stylesheet" href="./assets/css/sobre/sobre-texto.css">
+  <link rel="stylesheet" href="./assets/css/sobre/sobre-detalhe.css">
+  <link rel="stylesheet" href="./assets/css/skills/skills.css">
+  <link rel="stylesheet" href="./assets/css/skills/skills-titulo.css">
+  <link rel="stylesheet" href="./assets/css/skills/skills-caixa.css">
+  <link rel="stylesheet" href="./assets/css/skills/skill.css">
+  <link rel="stylesheet" href="./assets/css/skills/skill-texto.css">
+  <link rel="stylesheet" href="./assets/css/skills/skills-titulo.css">
+  <link rel="stylesheet" href="./assets/css/skills/skill-imagem.css">
+  <link rel="stylesheet" href="./assets/css/skills/skill-bar.css">
+  <link rel="stylesheet" href="./assets/css/skills/skill-progress.css">
 
 </head>
 
-<body>
+<body class="container">
+
   <header class="cabecalho">
     <h2 class="cabecalho__titulo">Alessandro Paolazzi</h2>
     <nav class="menu">
       <ul class="menu__lista">
-        <li class="menu__item"><a href="#sobre">Sobre mim</a></li>
-        <li class="menu__item"><a href="#skills">Skills</a></li>
-        <li class="menu__item"><a href="#hobbies">Hobbies</a></li>
-        <li class="menu__item"><a href="#formacao">Formação</a></li>
-        <li class="menu__item"><a href="#projetos">Projetos</a></li>
-        <li class="menu__item"><a href="mailto:alepaolazzidasilva@gmail.com">alepaolazzidasilva@gmail.com</a></li>
+        <li class="menu__item"><a class="menu__link" href="#sobre">Sobre mim</a></li>
+        <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
+        <li class="menu__item"><a class="menu__link" href="#hobbies">Hobbies</a></li>
+        <li class="menu__item"><a class="menu__link" href="#formacao">Formação</a></li>
+        <li class="menu__item"><a class="menu__link" href="#projetos">Projetos</a></li>
+        <li class="menu__item"><a class="menu__link" href="mailto:alepaolazzidasilva@gmail.com">alepaolazzidasilva@gmail.com</a></li>
       </ul>
     </nav>
   </header>
-  <main class="container">
+
+  <main class="conteudo">
+
     <section class="introducao">
       <div class="introducao__informacoes">
         <h1 class="introducao__titulo">Olá, me chamo Alessandro e construo páginas web</h1>
@@ -39,51 +68,55 @@
       </div>
       <div class="introducao__imagem"></div>
     </section>
+
     <section class="sobre" id="sobre">
-      <h2 class="sobre__titulo">Sobre Mim</h2>
+      <h2 class="sobre__titulo --titulo">Sobre mim</h2>
       <p class="sobre__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. </p>
       <p class="sobre__texto"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
       <div class="sobre__detalhe"></div>
     </section>
+
     <section class="skills" id="skills">
-      <h2 class="skills__titulo">Skills</h2>
-      <div class="skill">
-        <span class="skill__texto">JavaScript</span>
-        <img class="skill__img" src="./assets/img/js-icon.png" alt="Ícone JavaScript">
-        <div class="skill__bar--js">
-          <div class="skill__progress--js"></div>
+      <h2 class="skills__titulo --titulo">Skills</h2>
+      <div class="skills__caixa">
+        <div class="skill">
+          <span class="skill__texto">JavaScript</span>
+          <img class="skill__imagem" src="./assets/img/js-icon.png" alt="Ícone JavaScript">
+          <div class="skill__bar">
+            <span class="skill__progress--js"></span>
+          </div>
         </div>
-      </div>
-      <div class="skill">
-        <span class="skill__texto">CSS3</span>
-        <img class="skill__img" src="./assets/img/css-icon.png" alt="Ícone CSS">
-        <div class="skill__bar--css">
-          <div class="skill__progress--css"></div>
+        <div class="skill">
+          <span class="skill__texto">CSS3</span>
+          <img class="skill__imagem" src="./assets/img/css-icon.png" alt="Ícone CSS">
+          <div class="skill__bar">
+            <span class="skill__progress--css"></span>
+          </div>
         </div>
-      </div>
-      <div class="skill">
-        <span class="skill__texto">HTML5</span>
-        <img class="skill__img" src="./assets/img/html-icon.png" alt="Ícone HTML">
-        <div class="skill__bar--html">
-          <div class="skill__progress--html"></div>
+        <div class="skill">
+          <span class="skill__texto">HTML5</span>
+          <img class="skill__imagem" src="./assets/img/html-icon.png" alt="Ícone HTML">
+          <div class="skill__bar">
+            <span class="skill__progress--html"></span>
+          </div>
         </div>
-      </div>
-      <div class="skill">
-        <span class="skill__texto">NodeJS</span>
-        <img class="skill__img" src="./assets/img/node-icon.png" alt="Ícone NodeJS">
-        <div class="skill__bar--node">
-          <div class="skill__progress--node"></div>
+        <div class="skill">
+          <span class="skill__texto">NodeJS</span>
+          <img class="skill__imagem" src="./assets/img/node-icon.png" alt="Ícone NodeJS">
+          <div class="skill__bar">
+            <span class="skill__progress--node"></span>
+          </div>
         </div>
-      </div>
-      <div class="skill">
-        <span class="skill__texto">React</span>
-        <img class="skill__img" src="./assets/img/react-icon.png" alt="Ícone React">
-        <div class="skill__bar--react">
-          <div class="skill__progress--react"></div>
+        <div class="skill">
+          <span class="skill__texto">React</span>
+          <img class="skill__imagem" src="./assets/img/react-icon.png" alt="Ícone React">
+          <div class="skill__bar">
+            <span class="skill__progress--react"></span>
+          </div>
         </div>
       </div>
     </section>
-    <section class="hobbies" id="hobbies">
+    <section class="" id="hobbies">
       <h2 class="hobbies__titulo">Hobbies</h2>
       <div class="hobbie">
         <span class="hobbie__texto">Cozinhar</span>
@@ -102,7 +135,7 @@
         <img class="hobbie__img" src="./assets/img/music-icon.png" alt="Ícone Música">
       </div>
     </section>
-    <section class="formacao" id="formacao">
+    <section class="" id="formacao">
       <h2 class="formacao__titulo">Formação</h2>
       <div class="formacao__caixa">
         <div class="formacao__img">
@@ -137,7 +170,7 @@
         <p class="formacao__descricao">FreeCodeCamp</p>
       </div>
     </section>
-    <section class="projetos" id="projetos">
+    <section class="" id="projetos">
       <h2 class="projetos__titulo">Projetos</h2>
       <div class="projeto">
         <img class="projeto__img" src="#" alt="#">
@@ -175,7 +208,7 @@
         <a class="projeto__demo" href="demo">Demo</a>
       </div>
     </section>
-    <section class="contato" id="contato">
+    <section class="" id="contato">
       <div class="contato__img"></div>
       <h2 class="contato__titulo">Contato</h2>
       <p>Quer entrar em contato comigo? <br />
