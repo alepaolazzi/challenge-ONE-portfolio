@@ -12,27 +12,3 @@ html {
 body {
   font-family: "Raleway", sans-serif;
 }
-
-section {
-  grid-column: 2;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 150px 1fr 150px;
-}
-
-.conteudo {
-  grid-column: 2;
-}
-
-.rodape {
-  grid-column: 2;
-}
-
-.--titulo {
-  color: var(--dark-grey);
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1.1875;
-}

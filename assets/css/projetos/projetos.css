@@ -1,0 +1,8 @@
+.projetos {
+  padding-top: 2rem;
+}
+
+.projetos__container {
+  display: flex;
+  flex-direction: column;
+}

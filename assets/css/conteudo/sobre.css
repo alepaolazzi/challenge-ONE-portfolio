@@ -1,0 +1,16 @@
+.sobre {
+  background-color: var(--light-blue-bg);
+  padding: 4rem 0;
+}
+
+.sobre__conteudo {
+  max-width: 70%;
+}
+
+.sobre__conteudo p + p {
+  margin-top: 1rem;
+}
+
+.sobre__imagem {
+  margin-top: 1rem;
+}
