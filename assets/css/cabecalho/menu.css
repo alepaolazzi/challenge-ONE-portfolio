@@ -9,6 +9,10 @@
   line-height: 1.18;
 }
 
+.menu__link:hover {
+  color: var(--blue);
+}
+
 .menu__item:not(:last-child) {
   display: none;
 }

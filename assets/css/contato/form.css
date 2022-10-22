@@ -43,6 +43,11 @@
   padding: 16px;
 }
 
+.form__button:hover {
+  background-color: var(--blue-button);
+  cursor: pointer;
+}
+
 /* Estilos para label ficar dentro do input e detalhes adicionais */
 .form__label {
   cursor: pointer;

@@ -40,6 +40,26 @@
   color: var(--dark-grey);
 }
 
+.lista__link:hover {
+  animation: 0.3s link forwards;
+}
+
+@keyframes link {
+  from {
+    color: var(--dark-grey);
+    transform: translateX(0);
+  }
+  to {
+    color: var(--blue);
+    transform: translateX(5px);
+  }
+}
+
+.lista__link:hover .lista__detalhe {
+  transform: translate3d(5px, -5px, 0);
+  transition: 0.3s;
+}
+
 .resumo__imagem {
   background-image: url(/assets/img/profile.png);
   background-position: center top;
