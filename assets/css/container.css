@@ -1,4 +1,23 @@
 .container {
-  width: 1136px;
+  width: 328px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 732px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 950px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1136px;
+    margin: 0 auto;
+  }
 }

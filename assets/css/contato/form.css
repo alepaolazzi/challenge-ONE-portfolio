@@ -1,0 +1,74 @@
+.form__input-container {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.form__label {
+  color: var(--light-grey);
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.form__input,
+.form__textarea {
+  background-color: var(--white);
+  border: 2px solid transparent;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: var(--dark-grey);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-top: 2rem;
+  padding: 1.75rem 0.75rem 0.5rem 0.75rem;
+  width: 100%;
+  box-shadow: 0 2px 4px 0 var(--grey-input);
+}
+
+.form__textarea {
+  height: 130px;
+  border-radius: 2px;
+}
+
+.form__button {
+  align-self: center;
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  padding: 16px;
+}
+
+/* Estilos para label ficar dentro do input e detalhes adicionais */
+.form__label {
+  cursor: pointer;
+  left: 0.9rem;
+  position: absolute;
+  top: 3.25rem;
+  transition: all 0.25s;
+}
+
+.form__input:not(:placeholder-shown) + .form__label,
+.form__input:focus + .form__label {
+  color: var(--blue);
+  font-size: 0.75rem;
+  top: 2.45rem;
+  transition: all 0.25s;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+  box-shadow: 0 2px 4px 0 var(--blue);
+}
+
+.form__textarea:not(:placeholder-shown) + .form__label,
+.form__textarea:focus + .form__label {
+  color: var(--blue-input);
+  font-size: 0.75rem;
+  top: 2.45rem;
+  transition: all 0.25s;
+}

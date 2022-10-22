@@ -1,7 +1,6 @@
 .menu {
   align-items: center;
   display: flex;
-  gap: 2rem;
 }
 
 .menu__item {
@@ -10,10 +9,29 @@
   line-height: 1.18;
 }
 
+.menu__item:not(:last-child) {
+  display: none;
+}
+
 .menu__link {
   color: var(--dark-grey);
 }
 
 .menu__item:last-child .menu__link {
   font-weight: 700;
+}
+
+@media screen and (min-width: 1000px) {
+  .menu {
+    gap: 1.5rem;
+  }
+  .menu__item:not(:last-child) {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu {
+    gap: 2rem;
+  }
 }

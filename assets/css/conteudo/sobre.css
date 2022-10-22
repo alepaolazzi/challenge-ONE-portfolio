@@ -4,7 +4,7 @@
 }
 
 .sobre__conteudo {
-  max-width: 70%;
+  max-width: 100%;
 }
 
 .sobre__conteudo p + p {
@@ -13,4 +13,17 @@
 
 .sobre__imagem {
   margin-top: 1rem;
+}
+
+.sobre__texto {
+  font-size: 0.875rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .sobre__texto {
+    font-size: 1rem;
+  }
+  .sobre__conteudo {
+    max-width: 70%;
+  }
 }

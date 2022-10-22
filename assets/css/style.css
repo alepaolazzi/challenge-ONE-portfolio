@@ -4,8 +4,13 @@ html {
 
 :root {
   --dark-grey: #464646;
+  --light-grey: #a2a2a2;
   --light-bg: #f5f5f5;
   --light-blue-bg: #eaf2fd;
+  --blue: #2a7ae4;
+  --blue-button: #5595e9;
+  --light-blue-button: #d4e4fa;
+  --grey-input: #c8c8c8;
   --white: #fff;
 }
 

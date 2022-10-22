@@ -1,11 +1,11 @@
 .formacoes {
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 
 .formacao__container {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
 }
 
 .formacao__imagem {
@@ -14,7 +14,7 @@
   border: 1px solid var(--dark-grey);
   border-radius: 4px;
   display: flex;
-  height: 260px;
+  height: 118px;
   justify-content: center;
   max-width: 100%;
 }
@@ -22,4 +22,22 @@
 .formacao__imagem img {
   max-height: 50%;
   max-width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .formacoes {
+    padding: 5rem 0;
+  }
+  .formacao__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .formacao__imagem {
+    height: 180px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .formacao__imagem {
+    height: 260px;
+  }
 }

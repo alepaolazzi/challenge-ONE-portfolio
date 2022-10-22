@@ -1,7 +1,7 @@
 .titulo__secao,
 .titulo__secao--centro {
   color: var(--dark-grey);
-  font-size: 2rem;
+  font-size: 1.375rem;
   font-weight: 700;
   line-height: 1.18;
   margin-bottom: 1rem;
@@ -9,7 +9,7 @@
 
 .titulo__secao--centro {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .bg--light {
@@ -23,6 +23,27 @@
 .container--caixas {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(6, 1fr);
-  padding-bottom: 5.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container--caixas {
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 2rem;
+  }
+  .titulo__secao--centro {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .titulo__secao,
+  .titulo__secao--centro {
+    font-size: 2rem;
+  }
+  .container--caixas {
+    grid-template-columns: repeat(6, 1fr);
+    padding-bottom: 5.5rem;
+  }
 }

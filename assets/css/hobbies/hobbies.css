@@ -1,0 +1,11 @@
+.hobbie__texto {
+  color: var(--dark-grey);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .hobbies {
+    padding: 5.5rem 0;
+  }
+}

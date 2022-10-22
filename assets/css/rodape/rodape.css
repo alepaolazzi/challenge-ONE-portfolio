@@ -1,0 +1,22 @@
+.rodape {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.rodape__descricao,
+.rodape__ano {
+  color: var(--dark-grey);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.18;
+}
+
+.rodape__icones {
+  font-size: 0.5rem;
+  align-self: flex-end;
+  justify-self: end;
+}
