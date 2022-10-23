@@ -1,6 +1,5 @@
 export default function initAnima() {
   const sections = document.querySelectorAll("[data-anima]");
-  const linksInternos = document.querySelectorAll("[data-link='interno']");
   const parteWindow = window.innerHeight * 0.7;
   if (sections.length) {
     function scrollAnimado() {

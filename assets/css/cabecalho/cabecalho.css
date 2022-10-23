@@ -1,3 +1,11 @@
+.cabecalho {
+  padding: 0 23.5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 .cabecalho__container {
   align-items: center;
   display: flex;
@@ -29,13 +37,15 @@
   width: 24px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 425px) {
   .cabecalho {
     padding: 0 37px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cabecalho {
+    padding: 0 18px;
   }
   .cabecalho__container {
     flex-direction: row;
@@ -43,6 +53,12 @@
   }
   .cabecalho__titulo {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .cabecalho {
+    padding: 0 25px;
   }
 }
 
