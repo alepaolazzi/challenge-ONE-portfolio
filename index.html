@@ -27,33 +27,39 @@
   <link rel="stylesheet" href="./assets/css/contato/contato.css">
   <link rel="stylesheet" href="./assets/css/contato/form.css">
   <link rel="stylesheet" href="./assets/css/rodape/rodape.css">
-
+  <link rel="stylesheet" href="./assets/css/usadoJS.css">
   <link rel="stylesheet" href="./assets/css/globais.css">
+
+  <script>
+    document.documentElement.className += ' js'
+  </script>
 
 </head>
 
 <body>
 
-  <header class="bg--light">
-    <div class="container cabecalho">
-      <h2 class="cabecalho__titulo">Alessandro Paolazzi</h2>
-      <nav>
-        <ul class="menu">
-          <li class="menu__item"><a class="menu__link" href="#sobre">Sobre mim</a></li>
-          <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
-          <li class="menu__item"><a class="menu__link" href="#hobbies">Hobbies</a></li>
-          <li class="menu__item"><a class="menu__link" href="#formacao">Formação</a></li>
-          <li class="menu__item"><a class="menu__link" href="#projetos">Projetos</a></li>
-          <li class="menu__item"><a class="menu__link" href="mailto:alepaolazzidasilva@gmail.com">alepaolazzidasilva@gmail.com</a></li>
-        </ul>
-      </nav>
+  <header class="bg--light" data-cabecalho>
+    <div data-cabecalho="fixo" class="bg--light cabecalho">
+      <div class="container cabecalho__container">
+        <h2 class="cabecalho__titulo"><a data-link="interno" href="#resumo">Alessandro Paolazzi</a></h2>
+        <nav>
+          <ul class="menu">
+            <li class="menu__item"><a data-link="interno" class="menu__link" href="#sobre">Sobre mim</a></li>
+            <li class="menu__item"><a data-link="interno" class="menu__link" href="#skills">Skills</a></li>
+            <li class="menu__item"><a data-link="interno" class="menu__link" href="#hobbies">Hobbies</a></li>
+            <li class="menu__item"><a data-link="interno" class="menu__link" href="#formacao">Formação</a></li>
+            <li class="menu__item"><a data-link="interno" class="menu__link" href="#projetos">Projetos</a></li>
+            <li class="menu__item"><a data-link="interno" class="menu__link" href="#contato">alepaolazzidasilva@gmail.com</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main class="conteudo">
 
-    <section class="bg--light">
-      <div class="resumo container">
+    <section id="resumo" class="bg--light ajuste">
+      <div data-anima class="resumo container">
         <div class="resumo__conteudo">
           <h1 class="resumo__titulo">Olá, me chamo Alessandro e construo páginas web</h1>
           <p class="resumo__subtitulo">Atualmente estou cursando Análise e Desenvolvimento de Sistemas e participando do projeto Oracle ONE na Alura.</p>
@@ -66,9 +72,8 @@
         <div class="resumo__imagem"></div>
       </div>
     </section>
-
     <section id="sobre" class="bg--light-blue">
-      <div class="sobre container">
+      <div data-aparece data-anima class="sobre container">
         <div class="sobre__conteudo">
           <h2 class="titulo__secao">Sobre mim</h2>
           <p class="sobre__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. </p>
@@ -78,7 +83,7 @@
       </div>
     </section>
     <section id="skills" class="bg--light">
-      <div class="skills container">
+      <div data-aparece data-anima class="skills container">
         <h2 class="titulo__secao--centro">Skills</h2>
         <div class="container--caixas">
           <div class="caixa">
@@ -127,7 +132,7 @@
       </div>
     </section>
     <section id="hobbies" class="bg--light">
-      <div class="hobbies container">
+      <div data-aparece data-anima class="hobbies container">
         <h2 class="titulo__secao--centro">Hobbies</h2>
         <div class="container--caixas">
           <div class="caixa">
@@ -158,7 +163,7 @@
       </div>
     </section>
     <section id="formacao" class="bg--light-blue">
-      <div class="formacoes container">
+      <div data-aparece data-anima class="formacoes container">
         <h2 class="titulo__secao--centro">Formação Acadêmica</h2>
         <div class="formacao__container">
           <div class="formacao__caixa">
@@ -195,7 +200,7 @@
       </div>
     </section>
     <section id="projetos" class="bg--light">
-      <div class="container projetos">
+      <div data-aparece data-anima class="container projetos">
         <h2 class="titulo__secao--centro">Projetos</h2>
         <div class="projetos__container">
 
@@ -258,14 +263,14 @@
         </div>
       </div>
     </section>
-    <section class="bg--light-blue">
-      <div class="container contato">
+    <section id="contato" class="bg--light-blue">
+      <div data-aparece data-anima class="container contato">
         <div class="contato__img"></div>
         <div class="contato__conteudo">
           <h2 class="titulo__secao">Contato</h2>
           <p class="contato__descricao">Quer entrar em contato comigo? <br />
             Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
-          <form action="" id="contato__form">
+          <form action="mailto:alepaolazzidasiva@gmail.com" id="contato__form">
             <div class="form__input-container">
               <input class="form__input" placeholder="Nome" type="text" name="nome" id="nome" required>
               <label class="form__label" for="nome">Nome</label>
@@ -293,6 +298,7 @@
     <span class="rodape__ano">2022</span>
     <p class="rodape__icones">ícones by <a href="https://icons8.com.br/">icons8&copy;</a></p>
   </footer>
+  <script type="module" src="./assets/js/script.js"></script>
 </body>
 
 </html>

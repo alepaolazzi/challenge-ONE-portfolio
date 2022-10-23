@@ -7,10 +7,7 @@
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.18;
-}
-
-.menu__link:hover {
-  color: var(--blue);
+  position: relative;
 }
 
 .menu__item:not(:last-child) {
@@ -19,6 +16,22 @@
 
 .menu__link {
   color: var(--dark-grey);
+}
+
+.menu__link::after {
+  background-color: var(--blue);
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 20px;
+  transition: 0.5s;
+  width: 0;
+}
+
+.menu__link:hover::after {
+  transition: 0.3s;
+  width: 100%;
 }
 
 .menu__item:last-child .menu__link {
