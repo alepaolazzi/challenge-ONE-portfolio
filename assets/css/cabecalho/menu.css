@@ -25,13 +25,8 @@
   left: 0;
   position: absolute;
   top: 20px;
-  transition: 0.5s;
-  width: 0;
-}
-
-.menu__link:hover::after {
   transition: 0.3s;
-  width: 100%;
+  width: 0;
 }
 
 .menu__item:last-child .menu__link {

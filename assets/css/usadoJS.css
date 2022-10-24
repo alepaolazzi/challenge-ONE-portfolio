@@ -15,3 +15,8 @@
   background-color: var(--white);
   transition: all 0.3s;
 }
+
+.js .menu__link.active::after {
+  transition: 0.3s;
+  width: 100%;
+}
