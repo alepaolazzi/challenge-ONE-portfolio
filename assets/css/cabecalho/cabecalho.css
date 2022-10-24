@@ -4,6 +4,7 @@
   top: 0;
   left: 0;
   z-index: 1;
+  transition: 0.3s;
 }
 
 .cabecalho__container {
@@ -37,9 +38,9 @@
   width: 24px;
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 400px) {
   .cabecalho {
-    padding: 0 37px;
+    padding: 0 48.5px;
   }
 }
 

@@ -5,7 +5,46 @@
   box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
   height: 174px;
   justify-content: center;
+}
+
+.skill__bar {
+  border-radius: 5px;
+  width: 90%;
+  height: 10px;
+  position: relative;
+  background-color: var(--light-grey);
+}
+
+.skill__progress {
+  border-radius: 5px;
+  position: absolute;
+  height: 100%;
+  background-color: var(--blue);
+}
+
+.skill__progress--js {
+  width: 65%;
+}
+
+.skill__progress--css {
+  width: 75%;
+}
+
+.skill__progress--html {
+  width: 85%;
+}
+
+.skill__progress--php {
+  width: 0%;
+}
+
+.skill__progress--node {
+  width: 30%;
+}
+
+.skill__progress--react {
+  width: 35%;
 }

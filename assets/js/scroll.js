@@ -6,7 +6,6 @@ export default function initScroll() {
     const href = e.currentTarget.getAttribute("href");
     const section = document.querySelector(href);
     const topo = section.offsetTop - 70;
-    console.log(topo);
     window.scrollTo({
       top: topo,
       behavior: "smooth",
