@@ -65,7 +65,7 @@
 }
 
 .resumo__imagem {
-  background-image: url(/assets/img/profile.png);
+  background-image: url(../../img/profile.png);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
