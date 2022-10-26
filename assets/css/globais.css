@@ -1,6 +1,6 @@
 .titulo__secao,
 .titulo__secao--centro {
-  color: var(--dark-grey);
+  color: var(--text-color-1);
   font-size: 1.375rem;
   font-weight: 700;
   line-height: 1.18;
@@ -13,11 +13,11 @@
 }
 
 .bg--light {
-  background-color: var(--light-bg);
+  background-color: var(--bg-color-2);
 }
 
 .bg--light-blue {
-  background-color: var(--light-blue-bg);
+  background-color: var(--bg-color-1);
 }
 
 .container--caixas {

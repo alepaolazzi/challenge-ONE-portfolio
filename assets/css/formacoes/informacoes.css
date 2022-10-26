@@ -6,7 +6,7 @@
 }
 
 .informacao__nome {
-  color: var(--dark-grey);
+  color: var(--text-color-1);
   font-weight: 700;
   line-height: 1.18;
   margin: 0.5rem 0;
@@ -22,7 +22,7 @@
 .informacao__data,
 .informacao__descricao {
   align-items: center;
-  color: var(--dark-grey);
+  color: var(--text-color-1);
   display: flex;
   font-weight: 500;
   line-height: 1.18;

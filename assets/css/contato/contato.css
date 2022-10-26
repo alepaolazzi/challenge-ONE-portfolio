@@ -22,7 +22,7 @@
 }
 
 .contato__descricao {
-  color: var(--dark-grey);
+  color: var(--text-color-1);
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.18;

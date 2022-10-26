@@ -1,5 +1,4 @@
 .cabecalho {
-  /* padding: 0 23.5px; */
   position: fixed;
   top: 0;
   left: 0;
@@ -17,9 +16,14 @@
   padding-top: 2rem;
 }
 
+.container__titulo {
+  display: flex;
+  align-items: center;
+}
+
 .cabecalho__titulo {
   align-items: center;
-  color: var(--dark-grey);
+  color: var(--text-color-1);
   display: flex;
   font-size: 1rem;
   font-weight: 700;
@@ -28,15 +32,8 @@
 }
 
 .cabecalho__titulo:hover {
-  color: var(--blue);
+  color: var(--datails-color-1);
   transition: 0.2s;
-}
-
-.cabecalho__titulo::before {
-  content: url(/assets/img/stars.svg);
-  height: 24px;
-  margin-right: 0.5rem;
-  width: 24px;
 }
 
 @media screen and (min-width: 768px) {

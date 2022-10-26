@@ -1,5 +1,6 @@
 .rodape {
   align-items: center;
+  background-color: var(--details-bg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,7 +10,7 @@
 
 .rodape__descricao,
 .rodape__ano {
-  color: var(--dark-grey);
+  color: var(--text-color-1);
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.18;

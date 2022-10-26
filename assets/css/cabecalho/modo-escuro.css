@@ -1,0 +1,9 @@
+.modo-escuro {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.efeito-escuro {
+  transition: 0.3s;
+}

@@ -6,14 +6,14 @@
 }
 
 .projeto__nome {
-  color: var(--dark-grey);
+  color: var(--text-color-1);
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.18;
 }
 
 .projeto__resumo {
-  color: var(--dark-grey);
+  color: var(--text-color-1);
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.18;
@@ -30,29 +30,32 @@
 
 .projeto__repositorio,
 .projeto__demo {
-  border: 1px solid var(--blue);
+  border: 1px solid var(--datails-color-1);
   font-size: 0.75rem;
-  font-weight: 400;
-  padding: 0.5rem 1rem;
+  font-weight: 700;
   line-height: 1.18;
+  padding: 0.5rem 1rem;
+  transition: 0.5s;
   width: 45%;
 }
 
 .projeto__repositorio {
-  color: var(--blue);
+  color: var(--datails-color-1);
 }
 
 .projeto__demo {
-  color: var(--white);
-  background-color: var(--blue);
+  color: var(--details-bg);
+  background-color: var(--datails-color-1);
 }
 
 .projeto__repositorio:hover {
-  background-color: var(--light-blue-button);
+  background-color: var(--datails-button-hover);
+  transition: 0.5s;
 }
 
 .projeto__demo:hover {
-  background-color: var(--blue-button);
+  background-color: var(--datails-color-2);
+  transition: 0.5s;
 }
 
 @media screen and (min-width: 768px) {

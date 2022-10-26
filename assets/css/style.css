@@ -3,15 +3,29 @@ html {
 }
 
 :root {
-  --dark-grey: #464646;
-  --light-grey: #a2a2a2;
-  --light-bg: #f5f5f5;
-  --light-blue-bg: #eaf2fd;
-  --blue: #2a7ae4;
-  --blue-button: #5595e9;
-  --light-blue-button: #d4e4fa;
-  --grey-input: #c8c8c8;
-  --white: #fff;
+  /* light mode */
+  --text-color-1: #464646;
+  --text-color-2: #a2a2a2;
+  --bg-color-1: #eaf2fd;
+  --bg-color-2: #f5f5f5;
+  --datails-color-1: #2a7ae4;
+  --datails-color-2: #5595e9;
+  --datails-button-hover: #d4e4fa;
+  --datails-shadow: #c8c8c8;
+  --details-bg: #fff;
+}
+
+:root .dark {
+  /* dark mode */
+  --text-color-1: #f5f5f5;
+  --text-color-2: #dbdbdb;
+  --bg-color-1: #2d2d2d;
+  --bg-color-2: #292929;
+  --datails-color-1: #2a7ae4;
+  --datails-color-2: #5595e9;
+  --datails-button-hover: #d4e4fa;
+  --datails-shadow: #000000;
+  --details-bg: #212121;
 }
 
 body {

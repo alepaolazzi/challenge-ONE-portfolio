@@ -4,7 +4,7 @@
 }
 
 .form__label {
-  color: var(--light-grey);
+  color: var(--text-color-2);
   display: block;
   font-size: 1rem;
   font-weight: 400;
@@ -13,18 +13,18 @@
 
 .form__input,
 .form__textarea {
-  background-color: var(--white);
+  background-color: var(--details-bg);
   border: 2px solid transparent;
   border-radius: 4px;
   box-sizing: border-box;
-  color: var(--dark-grey);
+  color: var(--text-color-1);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.25;
   margin-top: 2rem;
   padding: 1.75rem 0.75rem 0.5rem 0.75rem;
   width: 100%;
-  box-shadow: 0 2px 4px 0 var(--grey-input);
+  box-shadow: 0 2px 4px 0 var(--datails-shadow);
 }
 
 .form__textarea {
@@ -34,17 +34,19 @@
 
 .form__button {
   align-self: center;
-  background-color: var(--blue);
-  border: 1px solid var(--blue);
-  color: var(--white);
+  background-color: var(--datails-color-1);
+  border: 1px solid var(--datails-color-1);
+  box-shadow: 0 2px 4px 0 var(--datails-shadow);
+  color: var(--details-bg);
   font-size: 1rem;
   font-weight: 400;
   margin-top: 1rem;
   padding: 16px;
+  transition: 0.5s;
 }
 
 .form__button:hover {
-  background-color: var(--blue-button);
+  background-color: var(--datails-color-2);
   cursor: pointer;
 }
 
@@ -59,7 +61,7 @@
 
 .form__input:not(:placeholder-shown) + .form__label,
 .form__input:focus + .form__label {
-  color: var(--blue);
+  color: var(--datails-color-1);
   font-size: 0.75rem;
   top: 2.45rem;
   transition: all 0.25s;
@@ -67,12 +69,12 @@
 
 .form__input:focus,
 .form__textarea:focus {
-  box-shadow: 0 2px 4px 0 var(--blue);
+  box-shadow: 0 2px 4px 0 var(--datails-color-1);
 }
 
 .form__textarea:not(:placeholder-shown) + .form__label,
 .form__textarea:focus + .form__label {
-  color: var(--blue-input);
+  color: var(--datails-color-1);
   font-size: 0.75rem;
   top: 2.45rem;
   transition: all 0.25s;

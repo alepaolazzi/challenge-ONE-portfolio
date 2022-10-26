@@ -10,8 +10,8 @@
 
 .formacao__imagem {
   align-items: center;
-  background-color: var(--white);
-  border: 1px solid var(--dark-grey);
+  background-color: var(--details-bg);
+  border: 1px solid var(--text-color-1);
   border-radius: 4px;
   display: flex;
   height: 118px;

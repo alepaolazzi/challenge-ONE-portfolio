@@ -1,5 +1,5 @@
 .sobre {
-  background-color: var(--light-blue-bg);
+  background-color: var(--bg-color-1);
   padding: 4rem 0;
 }
 
@@ -16,6 +16,7 @@
 }
 
 .sobre__texto {
+  color: var(--text-color-1);
   font-size: 0.875rem;
 }
 

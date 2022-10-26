@@ -15,11 +15,11 @@
 }
 
 .menu__link {
-  color: var(--dark-grey);
+  color: var(--text-color-1);
 }
 
 .menu__link::after {
-  background-color: var(--blue);
+  background-color: var(--datails-color-1);
   content: "";
   height: 2px;
   left: 0;

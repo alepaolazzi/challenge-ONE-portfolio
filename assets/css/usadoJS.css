@@ -11,8 +11,8 @@
 }
 
 .js .detalheBorda {
-  box-shadow: 0 2px 6px 0 var(--blue);
-  background-color: var(--white);
+  box-shadow: 0 2px 6px 0 var(--datails-color-1);
+  background-color: var(--details-bg);
   transition: all 0.3s;
 }
 
