@@ -4,12 +4,24 @@ export default function initDarkMode() {
   function modoEscuro() {
     const bodyClass = document.body.classList;
     document.body.classList.toggle("dark");
-    if (bodyClass.length == 0) {
-      img.setAttribute("src", "./assets/img/lua.png");
-    } else {
+    if (bodyClass.contains("dark")) {
       img.setAttribute("src", "./assets/img/sol.png");
+      localStorage.setItem("preferencia", bodyClass[0]);
+    } else {
+      img.setAttribute("src", "./assets/img/lua.png");
+      localStorage.setItem("preferencia", bodyClass[0]);
     }
   }
+
+  function modoPreferencia() {
+    if (localStorage.getItem("preferencia") == "dark") {
+      document.body.classList.add("dark");
+      img.setAttribute("src", "./assets/img/sol.png");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }
+  modoPreferencia();
 
   btn.addEventListener("click", modoEscuro);
 }
